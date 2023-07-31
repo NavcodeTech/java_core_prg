@@ -1,0 +1,26 @@
+package com.example.exception;
+
+public class BankException extends Exception{
+
+	public BankException(String message) {
+		super(message);
+		
+	}
+
+}
+class BankMain
+{
+	public static void main(String[] args) {
+		try
+		{
+		BankAccount b=new BankAccount(101,"Naveen","Savings",2000.0f);
+		
+		 b.withdraw(200);
+		}
+		catch(BankException e)
+		{
+			System.err.println(e.getMessage());
+		}
+		
+	}
+}

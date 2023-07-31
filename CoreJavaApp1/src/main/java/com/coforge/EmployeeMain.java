@@ -1,0 +1,14 @@
+package com.coforge;
+
+public class EmployeeMain {
+
+	public static void main(String[] args) {
+		Employee emp=new Employee();
+		emp.id=9899;
+		emp.name="Naveen";
+		emp.country="India";
+		emp.show();
+
+	}
+
+}

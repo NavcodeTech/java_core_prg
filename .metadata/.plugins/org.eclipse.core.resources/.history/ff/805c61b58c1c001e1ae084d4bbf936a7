@@ -1,0 +1,14 @@
+package day5;
+
+import java.util.Collection;
+
+public class ListPrg1 {
+	public static void main(String[] args) {
+		Collection<E> cl=new ArrayList();
+		cl.add(1234);
+		cl.add(new Integer("1234"));
+		cl.add(45000.0f);
+		cl.add("Greater Noida");
+		System.out.println(cl);
+	}
+}

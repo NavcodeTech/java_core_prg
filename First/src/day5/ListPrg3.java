@@ -1,0 +1,23 @@
+package day5;
+
+import java.util.LinkedList;
+
+public class ListPrg3 {
+	public static void main(String[] args) {
+		LinkedList<String> li=new LinkedList<>();
+		li.add("java");
+		li.add("python");
+		li.add("Javascript");
+		li.add("python");
+		System.out.println(li);
+		li.addFirst("Servlet");
+		System.out.println(li);
+		li.addLast("Spring Boot");
+		System.out.println(li);
+		li.remove();//remove from first
+		System.out.println(li);
+		li.removeLast();
+		System.out.println(li);
+		
+	}
+}

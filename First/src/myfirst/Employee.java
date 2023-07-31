@@ -1,0 +1,32 @@
+package myfirst;
+
+public class Employee {
+	
+	int id;//instance variable
+	String name;
+	float salary;
+	public String employeeId;
+	public Employee() {
+		System.out.println("constructor called");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee employee;//employee is refernce variable
+		employee=new Employee();
+		System.out.println("id is "+employee.id);//0
+		System.out.println("name is "+employee.name);//null
+		System.out.println("salary is "+employee.salary);//0,0
+		
+		employee.id=10001;
+		employee.name="Atul";
+		employee.salary=20000;
+		
+		System.out.println("id is "+employee.id);//1001
+		System.out.println("name is "+employee.name);//Atul
+		System.out.println("salary is "+employee.salary);//20000.0
+		
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package day3;
+
+public class WrapperProg {
+public static void main(String[] args) {
+	int x=100;
+	Integer p1=new Integer(x);
+	int intvalue= p1.intValue();
+	
+	intvalue++;
+	intvalue++;
+	p1=new Integer(x);
+	System.out.println(p1);
+}
+}

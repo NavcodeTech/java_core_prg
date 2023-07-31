@@ -1,0 +1,22 @@
+package day6;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class ListSort {
+
+	public static void main(String[] args) {
+		Integer ar[]= {11,2,3,1,5,6,4};
+		List<Integer> li= Arrays.asList(ar);
+		
+		List<Integer> li2=new ArrayList<>(li);
+		System.out.println(li2);
+		Collections.sort(li2);
+		System.out.println(li2);
+		
+		System.out.println("found at:"+Collections.binarySearch(li2, 5));
+	}
+
+}

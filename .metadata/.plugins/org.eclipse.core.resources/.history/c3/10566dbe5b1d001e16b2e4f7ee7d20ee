@@ -1,0 +1,19 @@
+package day6;
+
+interface Calculation
+{
+	void addition(int a,int b);
+}
+public class Anonymous {
+	public static void main(String[] args) {
+		Calculation c=new Calculation() {
+			
+			@Override
+			public void addition(int a, int b) {
+				System.out.println("Addition is "+(a+b));
+				
+			}
+		};
+		c.addition(11, 2);
+	}
+}

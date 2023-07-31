@@ -1,0 +1,20 @@
+package day5;
+
+public class StringPrg4 {
+
+	public static void main(String[] args) {
+		String email="navasept2001@gmail.com";
+		
+		int pos=email.indexOf('@');
+		if(pos>=0)
+		{
+			System.out.println("found at: "+pos);
+		}
+		else
+		{
+			System.out.println("not found");
+		}
+
+	}
+
+}

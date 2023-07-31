@@ -1,0 +1,20 @@
+package com.coforge;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class UserTest {
+	User user;
+	@Before
+	public void setUp() throws Exception {
+		user=new User(1009,"Rashi Sirvastav",45000);
+	}
+
+	@Test
+	public void test() {
+		//fail("Not yet implemented");
+	}
+
+}

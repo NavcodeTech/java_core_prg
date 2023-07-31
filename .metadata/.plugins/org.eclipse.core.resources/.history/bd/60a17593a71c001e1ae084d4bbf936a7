@@ -1,0 +1,31 @@
+package com.coforge.collection.dao;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import myfirst.Employee;
+
+public class EmployeeOperation {
+	Set<Employee> empSet;
+	public EmployeeOperation()
+	{
+		empSet=new HashSet<>();
+	}
+	public Employee searchEmp(Employee emp)
+	{
+		if(empSet.contains(emp))
+			return emp;
+		return null;
+	}
+	public boolean addEmp(Employee emp)
+	{
+		if(searchEmp(emp)==null)
+		{
+			empSet.add(emp);
+		    return true;
+		}
+		else 
+			return false;
+	}
+	
+}

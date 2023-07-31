@@ -1,0 +1,28 @@
+package day6;
+
+public class Insurance {
+	private int insuranceId;
+	private String insuranceName;
+	private int insuranceYear;
+	private float insurancePremium;
+	public Insurance(int insuranceId, String insuranceName, int insuranceYear, float insurancePremium) {
+		super();
+		this.insuranceId = insuranceId;
+		this.insuranceName = insuranceName;
+		this.insuranceYear = insuranceYear;
+		this.insurancePremium = insurancePremium;
+	}
+	@Override
+	public String toString() {
+		return "Insurance [insuranceId=" + insuranceId + ", insuranceName=" + insuranceName + ", insuranceYear="
+				+ insuranceYear + ", insurancePremium=" + insurancePremium + "]";
+	}
+	public displayInsurance(List<Insurance> ins)
+	{
+		System.out.println();
+		for(Insurance insurance:ins)
+		{
+			System.out.println(insurance);
+		}
+	}
+}

@@ -1,0 +1,23 @@
+package day2;
+
+public class Rectangle {
+	float width;
+	float length;
+	
+	public Rectangle(float width, float length) {
+		super();
+		this.width = width;
+		this.length = length;
+	}
+	void area()
+	{
+		System.out.println("Area of length "+length+" and width "+width+" is "+(length*width));
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Rectangle rect=new Rectangle(5.5f,6.7f);
+		rect.area();
+	}
+
+}

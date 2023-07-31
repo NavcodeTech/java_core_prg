@@ -1,0 +1,54 @@
+package com.coforge.collection.dao;
+
+import java.util.Set;
+
+import com.coforge.collection.model.Employee;
+
+public class EmployeeMain {
+	public static void main(String[] args) {
+		EmployeeOperation op=new EmployeeOperation();
+		Employee emp[]=new Employee[4];
+		
+		emp[0]=new Employee(11060,"Suman kumar",34000);
+		emp[1]=new Employee(11070,"Naveen Kumar",32000);
+		emp[2]=new Employee(11072,"Niti kahyap",38000);
+		emp[3]=new Employee(11073,"Sunny Kumar",50000);
+		
+		System.out.println("Employee add operation");
+		
+		for(Employee e:emp)
+			op.addEmp(e);
+		
+		System.out.println("Employee get All  operation");
+		
+		Set<Employee> allEmployee=op.getAllEmployee();
+		
+		for(Employee emp2:allEmployee)
+		{
+			System.out.println(emp2.getEmpId()+"\t"+emp2.getEmpName()+"\t"+emp2.getEmpSal());
+		}
+		System.out.println("Employee Search Operation");
+		Employee searchEmp=op.searchEmp(emp[3]);
+		
+		if(searchEmp==null)
+			System.out.println("Not found");
+		else
+			System.out.println("Employee found"+searchEmp);
+		Employee emp3=new Employee(43553,"Atul singh",25000);
+		if(emp3==null)
+			System.out.println("Not found");
+		else
+			System.out.println("Employee found"+searchEmp);
+		
+		
+		System.out.println("Add operation");
+		if(op.addEmp(emp3))
+			System.out.println("Employee added succesfully");
+		else
+			System.out.println("Employee Already present");
+		if(op.addEmp(emp3))
+			System.out.println("Employee added succesfully");
+		else
+			System.out.println("Employee Already present");
+	}
+}

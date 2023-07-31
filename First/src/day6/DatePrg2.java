@@ -1,0 +1,32 @@
+package day6;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public class DatePrg2 {
+	public static void main(String[] args) {
+		LocalDate dt=LocalDate.now();
+		System.out.println(dt);
+		LocalDate plusYears=dt.plusYears(2);
+		System.out.println(plusYears);
+		System.out.println(dt.plusMonths(12));
+		System.out.println(dt.plusWeeks(4));
+		
+		System.out.println(dt);
+		
+		System.out.println(dt.minusMonths(11));
+		System.out.println(dt.minusYears(2));
+		System.out.println(dt.minusDays(12));
+		
+		System.out.println(dt);
+		
+		DateTimeFormatter dtf=DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		String format=dt.format(dtf);
+		System.out.println("Date in dd/MM/YYYY format "+format);
+		
+		dtf=DateTimeFormatter.ofPattern("dd/MM/yyyy EEE");
+		
+		System.out.println(dt.format(dtf));
+		
+	}
+}

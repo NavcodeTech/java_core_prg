@@ -1,0 +1,29 @@
+package com.coforge;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class UserTest {
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@Test
+	public void testGetUserId() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetUserName() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetUserSalary() {
+		fail("Not yet implemented");
+	}
+
+}

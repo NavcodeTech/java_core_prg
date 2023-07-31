@@ -1,0 +1,23 @@
+package day3;
+
+public class Bus {
+		private int busId;
+		private String busRoute;
+		private float busFare;
+		public Bus(int busId, String busRoute, float busFare) {
+			super();
+			this.busId = busId;
+			this.busRoute = busRoute;
+			this.busFare = busFare;
+		}
+		public int getBusId() {
+			return busId;
+		}
+		public String getBusRoute() {
+			return busRoute;
+		}
+		public float getBusFare() {
+			return busFare;
+		}
+
+}

@@ -1,0 +1,21 @@
+package com.example.exception;
+
+public class UserMain {
+
+	public static void main(String[] args) {
+		User u=new User();
+		try
+		{
+			u.setUserId(0);
+			//u.setUserId(1000);
+			u.setUserName("");
+			u.setUserSalary(0);
+			
+		}
+		catch(UserException e)
+		{
+			System.out.println(e.getMessage());
+		}
+	}
+
+}

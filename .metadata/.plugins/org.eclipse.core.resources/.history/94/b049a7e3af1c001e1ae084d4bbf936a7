@@ -1,0 +1,17 @@
+package day5;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapDemo1 {
+
+	public static void main(String[] args) {
+		Map<Integer,String> map=new HashMap<>();
+		map.put(10001,"Aman Kumar");
+		map.put(10002,"Ravi kumar");
+		map.put(10003,"Sonu kumar");
+		map.put(10003,"Deepu kumar");
+		map.put(10004,"Hari Sahani");
+	}
+
+}

@@ -1,0 +1,42 @@
+package com.example.exception;
+
+import java.util.Scanner;
+
+public class InterestCalculator {
+	float amount;
+	float rate;
+	int time;
+	Scanner sc=null;
+	float interest()
+	{
+		System.out.println("Enter amount:");
+		sc=new Scanner(System.in);
+		amount=sc.nextFloat();
+		if(amount<=0)
+			throw new RuntimeException();
+		System.out.println("Enter rate:");
+		rate=sc.nextFloat();
+		
+		if(rate<=0)
+			throw new RuntimeException();
+		System.out.println("Enter year:");
+		time=sc.nextInt();
+		
+		if(time<=0)
+			throw new RuntimeException();
+		
+		return amount*rate*time;
+		
+	}
+	public static void main(String[] args) {
+		InterestCalculator i=new InterestCalculator();
+		try
+		{
+			System.out.println("Interest caluculated="+i.interest());
+		}
+		catch(RuntimeException e)
+		{
+			System.out.println(e);
+		}
+	}
+}

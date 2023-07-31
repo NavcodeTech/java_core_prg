@@ -1,0 +1,32 @@
+package day5;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class MapDemo1 {
+
+	public static void main(String[] args) {
+		Map<Integer,String> map=new HashMap<>();
+		map.put(10001,"Aman Kumar");
+		map.put(10002,"Ravi kumar");
+		map.put(10003,"Sonu kumar");
+		map.put(10003,"Deepu kumar");
+		map.put(10004,"Hari Sahani");
+		System.out.println(map);
+		System.out.println(map.get(10003));
+		System.out.println(map.get(10001));
+		
+		Set<Integer> keySet= map.keySet();
+		map.remove(10001);
+		System.out.println(map.containsKey(10001));
+		
+		System.out.println(map.containsValue("aman kumar"));
+		
+		for(Integer key:keySet)
+		{
+			System.out.println(key+" "+map.get(key));
+		}
+	}
+
+}

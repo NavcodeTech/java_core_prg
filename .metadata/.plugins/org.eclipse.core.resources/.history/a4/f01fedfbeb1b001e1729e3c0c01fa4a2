@@ -1,0 +1,86 @@
+package com.example.exception;
+
+public class BankAccount {
+	int accNo;
+	String custName;
+	String accType;
+	float balance;
+	
+	public BankAccount(int accNo, String custName, String accType, float balance) throws BankException {
+		super();
+		this.accNo = accNo;
+		this.custName = custName;
+		this.accType = accType;
+		
+		if(accType.equals("Savings") && balance<1000)
+		{
+			throw new BankException("insufficent funds in your savings account");
+		}
+		else if(accType.equals("Current") && balance<5000)
+		{
+			throw new BankException("insufficent funds in your currennt account");
+		}
+		else if(balance<=0)
+			throw new BankException("Deposit amount should be greater than Zero.");
+		else
+		this.balance = balance;
+	}
+	
+	
+	public int getAccNo() {
+		return accNo;
+	}
+
+
+	public String getCustName() {
+		return custName;
+	}
+
+
+	public String getAccType() {
+		return accType;
+	}
+
+
+	void deposit(float amount) throws BankException
+	{
+		if(amount<=0)
+			throw new BankException("Deposit amount should be greater than Zero.");
+		else
+			balance=balance+amount;
+	}
+	void withdraw(float amount) throws BankException
+	{
+		if(amount<=0)
+		{
+			throw new BankException("Deposit amount should be greater than Zero.");
+		}
+		else if(amount>balance)
+		{
+			throw new BankException("Insufficient funds");
+		}
+		else if(accType.equals("Savings") && (balance-amount)<1000)
+		{
+			throw new BankException("insufficent funds in your savings account");
+		}
+		else if(accType.equals("Current") && (balance-amount)<5000)
+		{
+			throw new BankException("insufficent funds in your currennt account");
+		}
+		else
+			balance=balance-amount;
+	}
+	float getBalance() throws BankException
+	{
+		 if(accType.equals("Savings") && balance<1000)
+		{
+			throw new BankException("insufficent funds in your savings account");
+		}
+		else if(accType.equals("Current") && balance<5000)
+		{
+			throw new BankException("insufficent funds in your currennt account");
+		}
+		else
+			return balance;
+	}
+}

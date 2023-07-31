@@ -1,0 +1,15 @@
+package myfirst;
+
+public class Diff_No {
+public static void main(String[] args) {
+	int x=766767;
+	int y=0b1011110;
+	int z=0xabc198;
+	
+	int a=012345;
+	System.out.println(x);
+	System.out.println(y);
+	System.out.println(z);
+	System.out.println(a);
+}
+}

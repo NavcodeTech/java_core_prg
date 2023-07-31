@@ -1,0 +1,38 @@
+package day3;
+
+public class WaterBottle {
+	private int id;
+	private String type;
+	private float cost;
+	
+	
+	
+	{
+		this.id=10002;
+		this.type="Steel Bottle";
+		this.cost=300;
+		
+		System.out.println("Init block 2");
+	}
+	{
+		this.id=10001;
+		this.type="Plastic Bottle";
+		this.cost=200;
+		System.out.println("block1");
+	}
+	
+	public WaterBottle()
+	{
+		System.out.println("Constructor");
+		this.id=10003;
+		this.type="Wooden Bottle";
+		this.cost=300;
+		System.out.println("block1");
+	}
+	public static void main(String[] args) {
+		WaterBottle w1=new WaterBottle();
+		System.out.println(w1.id);
+		System.out.println(w1.type);
+		System.out.println(w1.cost);
+	}
+}

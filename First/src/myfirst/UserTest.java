@@ -1,0 +1,25 @@
+package myfirst;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class UserTest {
+
+	User user;
+	
+	@BeforeEach
+	void setUp() throws Exception {
+		user =new User();
+	}
+
+	@Test
+	void test() {
+		//fail("Not yet implemented");
+		assertEquals(98898,user.userId);
+		assertEquals(34000,user.userSalary);
+		assertEquals("Atul Singh",user.userName);
+		}
+
+}

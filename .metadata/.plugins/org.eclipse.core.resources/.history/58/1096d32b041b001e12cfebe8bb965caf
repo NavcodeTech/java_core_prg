@@ -1,0 +1,13 @@
+package day3;
+
+public class TypeCastProg {
+	public static void main(String[] args) {
+		int x=100;
+		float p1=x; //implicit casting,widening
+		
+		byte b1=(byte) x;//explicit casting,Narrowing
+		System.out.println(x);
+		System.out.println(b1);
+		System.out.println(p1);
+	}
+}

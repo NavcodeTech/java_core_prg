@@ -1,0 +1,22 @@
+package myfirst;
+
+public class User {
+		int userId;
+		String userName;
+		float userSalary;
+		public User()
+		{
+			userId=98898;
+			userSalary=34000;
+			userName="Atul Singh";
+		}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		User user1=new User();
+		System.out.println("user id "+user1.userId);
+		System.out.println("user name "+user1.userName);
+		System.out.println("user Salry "+user1.userSalary);
+
+	}
+
+}

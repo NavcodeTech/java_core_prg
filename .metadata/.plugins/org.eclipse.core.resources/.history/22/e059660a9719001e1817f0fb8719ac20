@@ -1,0 +1,50 @@
+package myfirst;
+
+public class TicketFareCalculator {
+
+	public static void main(String[] args) {
+		java.util.Scanner sc = new java.util.Scanner(System.in);
+		System.out.println("Enter the no of tickets:");
+		int n = sc.nextInt();
+		System.out.println("Do you want refreshment?(Y/N):");
+		String rf = sc.next();
+
+		System.out.println("Do you have coupon code?(Y/N):");
+		String coupon = sc.next();
+		System.out.println("Enter the circle(q/k):");
+		String circle = sc.next();
+		double price = 0;
+		if (circle.equals("q") || circle.equals("k")) {
+			if (n >= 5 && n <= 40) {
+				if (circle.equals("q")) {
+					price = n * (150.0);
+				}
+				if (circle.equals("k")) {
+					price = n * (75.0);
+				}
+					if (rf.equals("y")) {
+						price = price + n * 50.0;
+					}
+					if (n > 20) {
+						price = price - (price * 0.1);
+					}
+					if (coupon.equals("y")) {
+						price = price - (price * 0.02);
+					}
+					System.out.print("\n Ticket cost:" + price);
+				} 
+				if (n > 20) {
+					price = price - (price * 0.1);
+				}
+				if (coupon.equals("y")) {
+					price = price - (price * 0.02);
+				}
+				System.out.print("\n Ticket cost:" + price);
+			}
+		} else {
+			System.out.println("Minimum should be 5 and maximum should be 40");
+		}
+
+	}
+
+}

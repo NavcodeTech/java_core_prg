@@ -1,0 +1,25 @@
+package myfirst;
+
+public class Employee_StaticUse {
+	int employeeId;
+	String empName;
+	float empSalary;
+	static String country;
+	static
+	{
+		country="India";
+		System.out.println("Static block is called");
+	}
+	static
+	{
+		country="Bharat";
+		System.out.println("Static block is called");
+	}
+	public Employee_StaticUse()
+	{
+		System.out.println("Constructor is called");
+	}
+	
+	
+
+}

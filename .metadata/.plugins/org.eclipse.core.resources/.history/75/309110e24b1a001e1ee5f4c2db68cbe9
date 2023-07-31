@@ -1,0 +1,10 @@
+package myfirst;
+
+public class Employee_StaticUseMain {
+
+	public static void main(String[] args) {
+		//System.out.println("Country is"+Employee_StaticUse.country);
+		new Employee_StaticUse().employeeInfo();
+	}
+
+}

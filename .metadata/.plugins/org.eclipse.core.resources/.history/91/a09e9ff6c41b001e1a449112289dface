@@ -1,0 +1,17 @@
+package com.coforge;
+
+public class Employee {
+
+	public Employee() {
+		// TODO Auto-generated constructor stub
+	}
+	int id;
+	String name;
+	void show()
+	{
+		System.out.println("Employee data:");
+		System.out.println("Id:"+id);
+		System.out.println("Name:"+name);
+	}
+
+}

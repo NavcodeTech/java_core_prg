@@ -1,0 +1,20 @@
+package day6;
+
+import java.util.stream.Stream;
+
+public class StreamPrg2 {
+
+	public static void main(String[] args) {
+		Integer ar[]= {11,2,3,4,5,34,45,34,11,4,5};
+		System.out.println("duplicate removed");
+		Stream.of(ar).distinct().forEach(p->System.out.print(p+","));
+		System.out.println("\n sorted");
+		Stream.of(ar).sorted().forEach(p->System.out.println(p+","));
+		
+		System.out.println("\n limit \n");
+		Stream.of(ar).limit(4).forEach(p->System.out.println());
+		
+		
+	}
+
+}

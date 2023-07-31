@@ -1,0 +1,24 @@
+package day6;
+
+public class User {
+	private int useriD;
+	private String usertName;
+	private float userSalary;
+	public User(int useriD, String usertName, float userSalary) {
+		super();
+		this.useriD = useriD;
+		this.usertName = usertName;
+		this.userSalary = userSalary;
+	}
+	public int getUseriD() {
+		return useriD;
+	}
+	public String getUsertName() {
+		return usertName;
+	}
+	public float getUserSalary() {
+		return userSalary;
+	}
+	
+	
+}

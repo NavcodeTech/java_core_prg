@@ -1,0 +1,21 @@
+package day2;
+
+public class Formula {
+	//If we make it final can't override it
+	float speed(float distance,float time)
+	{
+		return distance/time;
+	}
+	void info()
+	{
+		System.out.println("formula class");
+	}
+}
+class MyFormula extends Formula
+{
+	@Override
+	float speed(float distance, float time) {
+		// TODO Auto-generated method stub
+		return distance/2*time;
+	}
+}
